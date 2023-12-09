@@ -1,0 +1,24 @@
+# Logs
+unicafe-redux/logs
+unicafe-redux/*.log
+unicafe-redux/npm-debug.log*
+unicafe-redux/yarn-debug.log*
+unicafe-redux/yarn-error.log*
+unicafe-redux/pnpm-debug.log*
+unicafe-redux/lerna-debug.log*
+
+unicafe-redux/node_modules
+unicafe-redux/dist
+unicafe-redux/dist-ssr
+unicafe-redux/*.local
+
+unicafe-redux/# Editor directories and files
+unicafe-redux/.vscode/*
+unicafe-redux/!.vscode/extensions.json
+unicafe-redux/.idea
+unicafe-redux/.DS_Store
+unicafe-redux/*.suo
+unicafe-redux/*.ntvs*
+unicafe-redux/*.njsproj
+unicafe-redux/*.sln
+unicafe-redux/*.sw?
