@@ -12,11 +12,10 @@ export const AnecdoteList = () => {
 
   const dispatch = useDispatch()
 
-  const vote = (id) => {
+  const vote = (id, anecdoteToVote) => {
       console.log('vote', id)
-      dispatch(voteUp(id))
-      const anecdote = anecdotes.find(a => a.id === id)
-      dispatch(setNotification(`you voted ${anecdote.content}`))
+      dispatch(voteUp(id, {...anecdoteToVote, votes: anecdoteToVote.votes + 1 }))
+      dispatch(setNotification(`you voted ${anecdoteToVote.content}`))
       setTimeout(() => dispatch(removeNotification()), 5000)
   }
 
@@ -29,7 +28,7 @@ export const AnecdoteList = () => {
           </div>
           <div>
             has {anecdote.votes}
-            <button onClick={() => vote(anecdote.id)}>vote</button>
+            <button onClick={() => vote(anecdote.id, anecdote)}>vote</button>
           </div>
         </div>
       )}
