@@ -22,3 +22,27 @@ unicafe-redux/*.ntvs*
 unicafe-redux/*.njsproj
 unicafe-redux/*.sln
 unicafe-redux/*.sw?
+
+redux-anecdotes/logs
+redux-anecdotes/*.log
+redux-anecdotes/npm-debug.log*
+redux-anecdotes/yarn-debug.log*
+redux-anecdotes/yarn-error.log*
+redux-anecdotes/pnpm-debug.log*
+redux-anecdotes/lerna-debug.log*
+
+redux-anecdotes/node_modules
+redux-anecdotes/dist
+redux-anecdotes/dist-ssr
+redux-anecdotes/*.local
+
+redux-anecdotes/# Editor directories and files
+redux-anecdotes/.vscode/*
+redux-anecdotes/!.vscode/extensions.json
+redux-anecdotes/.idea
+redux-anecdotes/.DS_Store
+redux-anecdotes/*.suo
+redux-anecdotes/*.ntvs*
+redux-anecdotes/*.njsproj
+redux-anecdotes/*.sln
+redux-anecdotes/*.sw?
