@@ -33,12 +33,21 @@ const reducer = (state = initialState, action) => {
     case 'ADD': {
       return [...state, action.payload]
     }
-    case 'BAD':
-      return {...state, bad: state.bad + 1 }
-    case 'ZERO':
-      return initialState
     default: return state
   }
 }
+
+export const addAnecdote = content => {
+  return { 
+    type: 'ADD',
+    payload: {
+      content,
+      id: getId(),
+      votes: 0
+    }
+  }
+}
+
+export const voteUp = id => ({ type: 'VOTE_UP', payload: id })
 
 export default reducer
